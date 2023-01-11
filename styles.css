@@ -111,7 +111,7 @@
 
 
 #homepage{
-    background-image: url(img/background/studio.jpg);
+    background-image: url(studio.jpg);
     background-size: cover;
 	background-position: center;
  	background-repeat: no-repeat, repeat; 
@@ -241,7 +241,7 @@
 
 
 #pop_oferty{
-    background-image: url(img/background/camera.jpg);
+    background-image: url(camera.jpg);
     background-size: cover;
 	background-position: center;
  	background-repeat: no-repeat, repeat; 
@@ -587,7 +587,7 @@
 }
 
 #o_mnie{
-    background-image: url(img/background/lukasiakaparat.jpg);
+    background-image: url(lukasiakaparat.jpg);
     background-size: cover;
 	background-position: center;
  	background-repeat: no-repeat, repeat; 
