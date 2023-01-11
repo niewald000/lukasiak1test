@@ -111,19 +111,17 @@
 
 
 #homepage{
-    background-image: url(studio.jpg);
+    background-image: url(img/background/studio.jpg);
     background-size: cover;
 	background-position: center;
  	background-repeat: no-repeat, repeat; 
-    display: grid;
-    place-content: center;
 }
 
 
 #hp_container{
     display: grid;
     place-content: center;
-    padding: 100px;
+    padding: 140px;
     width: auto;
     height: auto;
 }
@@ -133,12 +131,24 @@
     height: 170px;
 }
 
-#text_hp{
+#text_hp {
     font-size: 32px;
+    font-weight: 100;
+    padding: 28px;
     color: white;
     display: grid;
     place-content: center;
-    padding: 28px;
+}
+
+@media (max-width:800px){
+    #logo_hp{
+        width: 220px;
+        height: 130px;
+    }
+    
+    #text_hp{
+        font-size: 28px;
+    }
 }
 
 /*PORTFOLIO FOTKI*/
@@ -178,13 +188,14 @@
     width: 100%;
     height: 100%;
     display: block;
-    transition: scale 0.3s ease-out;
+    transition: all 3s ease-in-out;
     border-radius: 10%;
 }
 
 .box:hover{
     transform: scale(1.2);
     z-index: 2;
+    padding: 0;
 }
 
 .say_all_portfolio{
@@ -205,9 +216,15 @@
     }   
     
     .box{
-        width: 150px;
-        height: 100px;
+        width: 170px;
+        height: 110px;
         transition: scale 0.3s ease-out;
+    }
+    
+    
+    .box img{
+        height: 100%;
+        width: 100%;
     }
     
     .box:hover{
@@ -215,14 +232,15 @@
     }
     
     .say_all_portfolio{
-        font-size: 22px
+        font-size: 22px;
+        padding: 36px;
     }
 }
 
 
 
 #pop_oferty{
-    background-image: url(camera.jpg);
+    background-image: url(img/background/camera.jpg);
     background-size: cover;
 	background-position: center;
  	background-repeat: no-repeat, repeat; 
@@ -245,7 +263,7 @@
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    padding: 54px;
+    margin: 36px;
 }
 
 #min_pop_table{
@@ -405,8 +423,15 @@
 
 @media (max-width: 800px){
     
+    #text_pop{
+        font-size: 32px;
+    }
+    
     #pop_table{
         padding: 0;
+        margin: 48px;
+        height: 300px;
+        overflow-y: hidden;
     }
     
     #image{
@@ -419,7 +444,7 @@
     }
     
     #image__img{
-        height: 250px;
+        height: 10vh;
         width: 200px;
         display: none;
     }
@@ -451,6 +476,7 @@
         position: relative;
         margin: 0;
         padding: 0;
+        border: 0;
     }
     
     .image__overlay:hover{
@@ -543,6 +569,7 @@
         position: relative;
         margin: 0;
         padding: 0;
+        border: 0;
     }
     
     .img_overlay3:hover{
@@ -557,7 +584,7 @@
 }
 
 #o_mnie{
-    background-image: url(lukasiakaparat.jpg);
+    background-image: url(img/background/lukasiakaparat.jpg);
     background-size: cover;
 	background-position: center;
  	background-repeat: no-repeat, repeat; 
@@ -591,11 +618,16 @@
 }
 
 footer{
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;
     background-color: black;
+    display: grid;
+    
+        place-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
+
 
 footer ul{
     color: white;
@@ -616,8 +648,11 @@ footer ul a{
 }
 
 
-#logo_footer{
+#logo_footer_div{
     padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 #logo_footer img{
@@ -627,15 +662,22 @@ footer ul a{
 }
 
 .social_media_footer{
-    width: 48px;
+    width: 100%;
+    height: 100%;
+}
+
+#social_media_footer_container a{
+    overflow-y: hidden;
+    display: grid;
+    place-content: center;
     height: 48px;
-    margin: 0px 30px;
+    width: 48px;
+    margin: 8px 30px;
 }
 
 #social_media_footer_container{
     display: grid;
     place-content: center;
-    
 }
 
 @media (max-width: 800px){
@@ -649,15 +691,36 @@ footer ul a{
         padding: 0;
     }
     
+    #logo_footer{
+        display: flex;
+        justify-content: center;
+    }
+    
     #logo_footer img{
         width: 100px;
-        height: 70px;
-        padding-right: 16px;
+        height: 80px;
+        margin-right: 16px;
+    }
+    
+    #social_media_footer_container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    #social_media_footer_container a{
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
     }
 
     .social_media_footer{
-        width: 24px;
-        height: 24px;
-        margin: 24px 24px 0px 0px; 
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
     }
 }
