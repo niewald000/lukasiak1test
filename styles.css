@@ -111,10 +111,10 @@
 
 
 #homepage{
-    background-image: url(studio.jpg);
+    background-image: url(img/background/studio.jpg);
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat, repeat; 
+	background-position: center;
+ 	background-repeat: no-repeat, repeat; 
 }
 
 
@@ -169,25 +169,24 @@
 
 #photo_container_min{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     width: auto;
     height: auto;
-    padding: 20px 
 }
 
 .box{
     width: 305px;
     height: 200px;
-    padding: 8px;
     margin-bottom: 48px;
     overflow-y: hidden;
+    margin: 8px;
 }
 
 .box img{
     width: 100%;
     height: 100%;
-    display: block;
     transition: all 3s ease-in-out;
     border-radius: 10%;
 }
@@ -216,8 +215,8 @@
     }   
     
     .box{
-        width: 170px;
-        height: 110px;
+        width: 200px;
+        height: 120px;
         transition: scale 0.3s ease-out;
     }
     
@@ -240,10 +239,10 @@
 
 
 #pop_oferty{
-    background-image: url(camera.jpg);
+    background-image: url(img/background/camera.jpg);
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat, repeat; 
+	background-position: center;
+ 	background-repeat: no-repeat, repeat; 
     display: grid;
     place-content: center;
 }
@@ -436,8 +435,8 @@
     
     #image{
         position: relative;
-        width: 200px;
-        max-height: 250px;
+        width: 150px;
+        max-height: 200px;
         margin: 0;
         padding: 0;
         border: 0;
@@ -584,10 +583,10 @@
 }
 
 #o_mnie{
-    background-image: url(lukasiakaparat.jpg);
+    background-image: url(img/background/lukasiakaparat.jpg);
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat, repeat; 
+	background-position: center;
+ 	background-repeat: no-repeat, repeat; 
     display: grid;
     place-content: center;
 }
@@ -620,7 +619,8 @@
 footer{
     background-color: black;
     display: grid;
-    place-content: center;
+    
+        place-content: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
@@ -630,7 +630,7 @@ footer{
 
 footer ul{
     color: white;
-    padding: 20px 30px;
+    margin: 20px 15px;
 }
 
 footer ul a{
@@ -686,9 +686,10 @@ footer ul a{
     }
     
     footer ul a{
-        font-size: 12px;
+        font-size: 10px;
         padding: 0;
     }
+    
     
     #logo_footer{
         display: flex;
