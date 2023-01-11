@@ -111,10 +111,10 @@
 
 
 #homepage{
-    background-image: url(img/background/studio.jpg);
+    background-image: url(studio.jpg);
     background-size: cover;
-	background-position: center;
- 	background-repeat: no-repeat, repeat; 
+    background-position: center;
+    background-repeat: no-repeat, repeat; 
 }
 
 
@@ -240,10 +240,10 @@
 
 
 #pop_oferty{
-    background-image: url(img/background/camera.jpg);
+    background-image: url(camera.jpg);
     background-size: cover;
-	background-position: center;
- 	background-repeat: no-repeat, repeat; 
+    background-position: center;
+    background-repeat: no-repeat, repeat; 
     display: grid;
     place-content: center;
 }
@@ -584,10 +584,10 @@
 }
 
 #o_mnie{
-    background-image: url(img/background/lukasiakaparat.jpg);
+    background-image: url(lukasiakaparat.jpg);
     background-size: cover;
-	background-position: center;
- 	background-repeat: no-repeat, repeat; 
+    background-position: center;
+    background-repeat: no-repeat, repeat; 
     display: grid;
     place-content: center;
 }
@@ -620,8 +620,7 @@
 footer{
     background-color: black;
     display: grid;
-    
-        place-content: center;
+    place-content: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
